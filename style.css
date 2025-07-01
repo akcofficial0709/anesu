@@ -1,0 +1,57 @@
+.background-color {
+  background-color: white;
+  color: black;
+}
+
+.hero-section {
+  /* Make it fill the viewport height */
+  min-height: 100vh;
+
+  /* Set your background image */
+  background-image: url('OIPsghjk.webp'); /* Replace with your image path */
+
+  /* Make it cover the entire area */
+  background-size: cover;
+
+  /* Center it nicely */
+  background-position: center;
+
+  /* Don't repeat */
+  background-repeat: no-repeat;
+
+  /* Optional: dark overlay for readability */
+  position: relative;
+  color: white; /* So your text shows on dark background */
+}
+
+/* Optional: semi-transparent overlay */
+.hero-section::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 2;
+}
+
+/* Make sure your content stays above the overlay */
+.hero-section .hero-content,
+.hero-section nav {
+  position: relative;
+  z-index: 1;
+}
+
+
+.img1 {
+  border-radius: 20px;
+  margin-right: 5px;
+  height: 40px;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
