@@ -27,24 +27,26 @@
 /* Optional: semi-transparent overlay */
 .hero-section::before {
   content: "";
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
-  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 0;
 }
 
 /* Make sure your content stays above the overlay */
 .hero-section .hero-content,
 .hero-section nav {
   position: relative;
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 2;
 }
 
+
 .mb-4z {
-  color:rgb(191, 191, 191);
+  color: rgb(191, 191, 191);
 }
 
 
